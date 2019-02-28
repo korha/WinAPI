@@ -1,0 +1,13 @@
+*
+!*/
+!.gitignore
+!*.cmd
+!*.cpp
+!*.def
+!*.h
+!*.ico
+!*.manifest
+!*.pro
+!*.rc
+!*.txt
+rungit.cmd

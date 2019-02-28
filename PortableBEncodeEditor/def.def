@@ -1,0 +1,91 @@
+LIBRARY lib
+EXPORTS
+
+;advapi32.dll
+AddAce=advapi32.AddAce
+AdjustTokenPrivileges=advapi32.AdjustTokenPrivileges
+CloseServiceHandle=advapi32.CloseServiceHandle
+CopySid=advapi32.CopySid
+DuplicateTokenEx=advapi32.DuplicateTokenEx
+GetAce=advapi32.GetAce
+GetAclInformation=advapi32.GetAclInformation
+GetLengthSid=advapi32.GetLengthSid
+GetSecurityDescriptorDacl=advapi32.GetSecurityDescriptorDacl
+GetTokenInformation=advapi32.GetTokenInformation
+InitializeAcl=advapi32.InitializeAcl
+InitializeSecurityDescriptor=advapi32.InitializeSecurityDescriptor
+InitiateSystemShutdownExW=advapi32.InitiateSystemShutdownExW
+LockServiceDatabase=advapi32.LockServiceDatabase
+LogonUserW=advapi32.LogonUserW
+LookupPrivilegeValueW=advapi32.LookupPrivilegeValueW
+OpenProcessToken=advapi32.OpenProcessToken
+OpenSCManagerW=advapi32.OpenSCManagerW
+OpenThreadToken=advapi32.OpenThreadToken
+RegCloseKey=advapi32.RegCloseKey
+SetSecurityDescriptorDacl=advapi32.SetSecurityDescriptorDacl
+UnlockServiceDatabase=advapi32.UnlockServiceDatabase
+;
+CreateProcessAsUserW=CreateProcessAsUserW_Stub
+CreateProcessWithLogonW=CreateProcessWithLogonW_Stub
+GetUserNameW=GetUserNameW_Stub
+RegConnectRegistryW=RegConnectRegistryW_Stub
+RegCreateKeyExW=RegCreateKeyExW_Stub
+RegDeleteKeyW=RegDeleteKeyW_RegDeleteValueW_Stub
+RegDeleteValueW=RegDeleteKeyW_RegDeleteValueW_Stub
+RegEnumKeyExW=RegEnumKeyExW_RegEnumValueW_Stub
+RegEnumValueW=RegEnumKeyExW_RegEnumValueW_Stub
+RegOpenKeyExW=RegOpenKeyExW_Stub
+RegQueryValueExW=RegQueryValueExW_Stub
+RegSetValueExW=RegSetValueExW_Stub
+
+;mpr.dll
+WNetAddConnection2W=WNetAddConnection2W_Stub
+WNetCancelConnection2W=WNetCancelConnection2W_Stub
+WNetGetConnectionW=WNetGetConnectionW_Stub
+WNetUseConnectionW=WNetUseConnectionW_Stub
+
+;psapi.dll
+EnumProcesses=kernel32.K32EnumProcesses
+GetModuleBaseNameW=kernel32.K32GetModuleBaseNameW
+GetProcessMemoryInfo=kernel32.K32GetProcessMemoryInfo
+EnumProcessModules=kernel32.K32EnumProcessModules
+
+;wininet.dll
+FtpGetFileSize=FtpGetFileSize_Stub
+FtpOpenFileW=FtpOpenFileW_Stub
+HttpOpenRequestW=HttpOpenRequestW_Stub
+HttpQueryInfoW=HttpQueryInfoW_Stub
+HttpSendRequestW=HttpSendRequestW_Stub
+InternetCloseHandle=InternetCloseHandle_Stub
+InternetConnectW=InternetConnectW_Stub
+InternetCrackUrlW=InternetCrackUrlW_Stub
+InternetOpenUrlW=InternetOpenUrlW_Stub
+InternetOpenW=InternetOpenW_Stub
+InternetQueryDataAvailable=InternetQueryDataAvailable_Stub
+InternetQueryOptionW=InternetQueryOptionW_Stub
+InternetReadFile=InternetReadFile_Stub
+InternetSetOptionW=InternetSetOptionW_Stub
+
+;wsock32.dll
+accept=accept_Stub @0x1
+bind=bind_Stub @0x2
+closesocket=closesocket_Stub @0x3
+connect=connect_Stub @0x4
+gethostbyname=gethostbyname_Stub @0x34
+gethostname=gethostname_Stub @0x39
+htons=htons_Stub @0x9
+inet_addr=inet_addr_Stub @0xA
+inet_ntoa=inet_ntoa_Stub @0xB
+listen=listen_Stub @0xD
+ntohs=ntohs_Stub @0xF
+recv=recv_send_Stub @0x10
+recvfrom=recvfrom_Stub @0x11
+select=select_Stub @0x12
+send=recv_send_Stub @0x13
+sendto=sendto_Stub @0x14
+setsockopt=setsockopt_Stub @0x15
+socket=socket_Stub @0x17
+WSACleanup=WSACleanup_Stub @0x74
+WSAGetLastError=WSAGetLastError_Stub @0x6F
+WSAStartup=WSAStartup_Stub @0x73
+__WSAFDIsSet=WSAFDIsSet_Stub @0x97

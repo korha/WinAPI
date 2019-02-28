@@ -1,0 +1,8 @@
+LIBRARY lib
+EXPORTS
+
+;shell32.dll
+SHGetSpecialFolderPathW=SHGetSpecialFolderPathW_Stub
+
+;user32.dll
+MessageBoxA=MessageBoxA_Stub

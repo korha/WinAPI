@@ -1,0 +1,100 @@
+LIBRARY lib
+EXPORTS
+
+;advapi32.dll
+CryptAcquireContextA=advapi32.CryptAcquireContextA
+CryptAcquireContextW=advapi32.CryptAcquireContextW
+CryptCreateHash=advapi32.CryptCreateHash
+CryptDecrypt=advapi32.CryptDecrypt
+CryptDestroyHash=advapi32.CryptDestroyHash
+CryptDestroyKey=advapi32.CryptDestroyKey
+CryptEncrypt=advapi32.CryptEncrypt
+CryptGenRandom=advapi32.CryptGenRandom
+CryptGetHashParam=advapi32.CryptGetHashParam
+CryptHashData=advapi32.CryptHashData
+CryptImportKey=advapi32.CryptImportKey
+CryptReleaseContext=advapi32.CryptReleaseContext
+CryptSetKeyParam=advapi32.CryptSetKeyParam
+DeregisterEventSource=advapi32.DeregisterEventSource
+RegCloseKey=advapi32.RegCloseKey
+RegisterEventSourceA=advapi32.RegisterEventSourceA
+ReportEventA=advapi32.ReportEventA
+;
+RegCreateKeyExA=RegCreateKeyExA_RegCreateKeyExW_Stub
+RegCreateKeyExW=RegCreateKeyExA_RegCreateKeyExW_Stub
+RegOpenKeyA=RegOpenKeyA_Stub
+RegOpenKeyExA=RegOpenKeyExA_RegOpenKeyExW_Stub
+RegOpenKeyExW=RegOpenKeyExA_RegOpenKeyExW_Stub
+RegQueryValueExA=RegQueryValueExA_RegQueryValueExW_Stub
+RegQueryValueExW=RegQueryValueExA_RegQueryValueExW_Stub
+RegSetValueExA=RegSetValueExA_RegSetValueExW_Stub
+RegSetValueExW=RegSetValueExA_RegSetValueExW_Stub
+
+;crypt32.dll (delay)
+CertCloseStore=CertCloseStore_Stub
+CertCompareCertificate=CertCompareCertificate_Stub
+CertCreateCertificateContext=CertCreateCertificateContext_Stub
+CertEnumCertificatesInStore=CertEnumCertificatesInStore_Stub
+CertFindCertificateInStore=CertFindCertificateInStore_Stub
+CertFreeCertificateContext=CertFreeCertificateContext_Stub
+CertOpenStore=CertOpenStore_Stub
+CertVerifySubjectCertificateContext=CertVerifySubjectCertificateContext_Stub
+CryptGetMessageCertificates=CryptGetMessageCertificates_Stub
+CryptVerifyMessageSignature=CryptVerifyMessageSignature_Stub
+
+;psapi.dll (delay)
+GetProcessMemoryInfo=GetProcessMemoryInfo_Stub
+
+;urlmon.dll (delay)
+CopyStgMedium=CopyStgMedium_Stub
+
+;wininet.dll (delay)
+HttpOpenRequestA=HttpOpenRequestA_Stub
+HttpQueryInfoA=HttpQueryInfoA_Stub
+HttpSendRequestA=HttpSendRequestA_Stub
+InternetCloseHandle=InternetCloseHandle_Stub
+InternetConnectA=InternetConnectA_Stub
+InternetOpenA=InternetOpenA_Stub
+InternetReadFile=InternetReadFile_Stub
+
+;ws2_32.dll (delay)
+bind=bind_connect_Stub @0x2
+closesocket=closesocket_Stub @0x3
+connect=bind_connect_Stub @0x4
+gethostbyaddr=gethostbyaddr_Stub @0x33
+gethostbyname=gethostbyname_Stub @0x34
+gethostname=gethostname_Stub @0x39
+getpeername=getpeername_getsockname_Stub @0x5
+getservbyname=getservbyname_Stub @0x37
+getservbyport=getservbyport_Stub @0x38
+getsockname=getpeername_getsockname_Stub @0x6
+getsockopt=getsockopt_Stub @0x7
+htonl=htonl_ntohl_Stub @0x8
+htons=htons_ntohs_Stub @0x9
+inet_addr=inet_addr_Stub @0xB
+inet_ntoa=inet_ntoa_Stub
+ioctlsocket=ioctlsocket_Stub @0xA
+ntohl=htonl_ntohl_Stub @0xE
+ntohs=htons_ntohs_Stub
+recv=recv_send_Stub
+recvfrom=recvfrom_Stub
+select=select_Stub
+send=recv_send_Stub
+sendto=sendto_Stub @0x14
+setsockopt=setsockopt_Stub @0x15
+shutdown=shutdown_Stub @0x16
+socket=socket_Stub @0x17
+WSAAddressToStringA=WSAAddressToStringA_Stub
+WSAAsyncSelect=WSAAsyncSelect_Stub @0x65
+WSACleanup=WSACleanup_Stub @0x74
+WSACloseEvent=WSACloseEvent_Stub
+WSACreateEvent=WSACreateEvent_Stub
+WSAEnumNetworkEvents=WSAEnumNetworkEvents_Stub
+WSAEventSelect=WSAEventSelect_Stub
+WSAGetLastError=WSAGetLastError_Stub @0x6F
+WSAIoctl=WSAIoctl_Stub
+WSASetLastError=WSASetLastError_Stub @0x70
+WSASocketA=WSASocketA_WSASocketW_Stub
+WSASocketW=WSASocketA_WSASocketW_Stub
+WSAStartup=WSAStartup_Stub @0x73
+__WSAFDIsSet=WSAFDIsSet_Stub @0x97

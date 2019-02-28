@@ -1,0 +1,19 @@
+LIBRARY lib
+EXPORTS
+
+;advapi32.dll
+RegCloseKey=RegCloseKey_Stub
+RegCreateKeyExW=RegCreateKeyExW_Stub
+RegDeleteKeyW=RegDeleteKeyW_RegDeleteValueW_Stub
+RegDeleteValueW=RegDeleteKeyW_RegDeleteValueW_Stub
+RegEnumKeyExW=RegEnumKeyExW_RegEnumValueW_Stub
+RegEnumValueW=RegEnumKeyExW_RegEnumValueW_Stub
+RegFlushKey=RegFlushKey_Stub
+RegOpenKeyExW=RegOpenKeyExW_Stub
+RegOpenKeyW=RegOpenKeyW_Stub
+RegQueryInfoKeyW=RegQueryInfoKeyW_Stub
+RegQueryValueExW=RegQueryValueExW_Stub
+RegSetValueExW=RegSetValueExW_Stub
+
+;user32.dll
+MessageBoxA=MessageBoxA_Stub

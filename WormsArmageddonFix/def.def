@@ -1,0 +1,7 @@
+LIBRARY lib
+EXPORTS
+
+;ddraw.dll
+DirectDrawCreate=DirectDrawCreate_Stub
+DirectDrawCreateEx=DirectDrawCreateEx_Stub
+DirectDrawEnumerateExA=DirectDrawEnumerateExA_Stub

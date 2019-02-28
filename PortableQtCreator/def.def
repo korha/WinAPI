@@ -1,0 +1,6 @@
+LIBRARY lib
+EXPORTS
+
+;shell32.dll
+CommandLineToArgvW=CommandLineToArgvW_Stub
+SHGetKnownFolderPath=SHGetKnownFolderPath_Stub

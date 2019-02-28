@@ -1,0 +1,6 @@
+LIBRARY lib
+EXPORTS
+
+;dbghelp.dll
+ImageDirectoryEntryToData=ImageDirectoryEntryToData_Stub
+MiniDumpWriteDump=MiniDumpWriteDump_Stub

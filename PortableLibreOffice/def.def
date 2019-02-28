@@ -1,0 +1,6 @@
+LIBRARY lib
+EXPORTS
+
+;dbghelp.dll
+SymInitialize=SymInitialize_Stub
+SymFromAddr=SymFromAddr_Stub

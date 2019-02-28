@@ -1,0 +1,5 @@
+LIBRARY lib
+EXPORTS
+
+;shell32.dll
+SHGetSpecialFolderPathA=SHGetSpecialFolderPathA_Stub

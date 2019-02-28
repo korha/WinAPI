@@ -1,0 +1,5 @@
+LIBRARY lib
+EXPORTS
+
+;psapi.dll
+GetProcessMemoryInfo=GetProcessMemoryInfo_Stub

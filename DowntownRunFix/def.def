@@ -1,0 +1,8 @@
+LIBRARY lib
+EXPORTS
+
+;advapi32.dll
+RegCloseKey=RegCloseKey_Stub
+RegOpenKeyExA=RegOpenKeyExA_Stub
+RegQueryValueExA=RegQueryValueExA_Stub
+RegSetValueExA=RegSetValueExA_Stub

@@ -1,0 +1,58 @@
+LIBRARY lib
+EXPORTS
+
+;advapi32.dll
+AdjustTokenPrivileges=advapi32.AdjustTokenPrivileges
+LookupPrivilegeValueW=advapi32.LookupPrivilegeValueW
+OpenProcessToken=advapi32.OpenProcessToken
+RegCloseKey=advapi32.RegCloseKey
+;
+CloseServiceHandle=CloseServiceHandle_Stub
+OpenSCManagerW=OpenSCManagerW_OpenServiceW_Stub
+OpenServiceW=OpenSCManagerW_OpenServiceW_Stub
+RegCreateKeyExW=RegCreateKeyExW_Stub
+RegDeleteKeyW=RegDeleteKeyW_RegDeleteValueW_Stub
+RegDeleteValueW=RegDeleteKeyW_RegDeleteValueW_Stub
+RegEnumKeyW=RegEnumKeyW_Stub
+RegEnumKeyExW=RegEnumKeyExW_RegEnumValueW_Stub
+RegEnumValueW=RegEnumKeyExW_RegEnumValueW_Stub
+RegFlushKey=RegFlushKey_Stub
+RegOpenKeyExW=RegOpenKeyExW_Stub
+RegQueryInfoKeyW=RegQueryInfoKeyW_Stub
+RegQueryValueW=RegQueryValueW_Stub
+RegQueryValueExW=RegQueryValueExW_Stub
+RegSetValueExW=RegSetValueExW_Stub
+StartServiceW=StartServiceW_Stub
+
+;msimg32.dll
+AlphaBlend=AlphaBlend_TransparentBlt_Stub
+TransparentBlt=AlphaBlend_TransparentBlt_Stub
+
+;wininet.dll
+HttpQueryInfoW=HttpQueryInfoW_Stub
+InternetCloseHandle=InternetCloseHandle_Stub
+InternetOpenUrlW=InternetOpenUrlW_Stub
+InternetOpenW=InternetOpenW_Stub
+InternetReadFile=InternetReadFile_Stub
+
+;ws2_32.dll
+accept=accept_Stub @0x1
+connect=connect_Stub @0x4
+gethostbyaddr=gethostbyaddr_Stub @0x33
+gethostbyname=gethostbyname_Stub @0x34
+getservbyname=getservbyname_Stub @0x37
+getservbyport=getservbyport_Stub @0x38
+htonl=htonl_Stub @0x8
+htons=htons_Stub @0x9
+inet_addr=inet_addr_Stub @0xB
+inet_ntoa=inet_ntoa_Stub @0xC
+ntohs=ntohs_Stub @0xF
+recv=recv_send_Stub @0x10
+send=recv_send_Stub @0x13
+shutdown=shutdown_Stub @0x16
+socket=socket_Stub @0x17
+WSACleanup=WSACleanup_Stub @0x74
+WSAGetLastError=WSAGetLastError_Stub @0x6F
+WSASetLastError=WSASetLastError_Stub @0x70
+WSAStartup=WSAStartup_Stub @0x73
+__WSAFDIsSet=WSAFDIsSet_Stub @0x97

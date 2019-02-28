@@ -1,0 +1,5 @@
+LIBRARY lib
+EXPORTS
+
+;advapi32.dll
+GetUserNameA=GetUserNameA_Stub

@@ -1,0 +1,27 @@
+LIBRARY lib
+EXPORTS
+
+;advapi32.dll
+RegCloseKey=RegCloseKey_Stub
+RegCreateKeyA=RegCreateKeyA_Stub
+RegOpenKeyExA=RegOpenKeyExA_Stub
+RegQueryValueExA=RegQueryValueExA_Stub
+RegSetValueA=RegSetValueA_Stub
+RegSetValueExA=RegSetValueExA_Stub
+
+;wininet.dll
+HttpOpenRequestA=HttpOpenRequestA_Stub
+HttpSendRequestA=HttpSendRequestA_Stub
+InternetCloseHandle=InternetCloseHandle_Stub
+InternetConnectA=InternetConnectA_Stub
+InternetOpenA=InternetOpenA_Stub
+InternetReadFile=InternetReadFile_Stub
+
+;wsock.dll
+gethostbyname=gethostbyname_Stub @0x34
+htonl=htonl_Stub @0x8
+htons=htons_Stub @0x9
+inet_addr=inet_addr_Stub @0xA
+setsockopt=setsockopt_Stub @0x15
+WSACleanup=WSACleanup_Stub @0x74
+WSAStartup=WSAStartup_Stub @0x73

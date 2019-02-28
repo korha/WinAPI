@@ -1,0 +1,15 @@
+LIBRARY lib
+EXPORTS
+
+;advapi32.dll
+RegCloseKey=RegCloseKey_Stub
+RegCreateKeyExA=RegCreateKeyExA_Stub
+RegQueryValueExA=RegQueryValueExA_Stub
+RegSetValueExA=RegSetValueExA_Stub
+
+;dinput8.dll
+DirectInput8Create=DirectInput8Create_Stub
+
+;shell32.dll
+SHGetPathFromIDListA=SHGetPathFromIDListA_Stub
+SHGetSpecialFolderLocation=SHGetSpecialFolderLocation_Stub

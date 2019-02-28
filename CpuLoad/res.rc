@@ -1,0 +1,4 @@
+1 MANIFEST "CpuLoad.exe.manifest"
+IDI_ICON1 ICON DISCARDABLE "icon.ico"
+IDI_ICON2 ICON DISCARDABLE "img\\start.ico"
+IDI_ICON3 ICON DISCARDABLE "img\\stop.ico"

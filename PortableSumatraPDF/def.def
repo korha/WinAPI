@@ -1,0 +1,16 @@
+LIBRARY lib
+EXPORTS
+
+;urlmon.dll
+CoInternetGetSession=CoInternetGetSession_Stub
+
+;wininet.dll
+HttpOpenRequestW=HttpOpenRequestW_Stub
+HttpQueryInfoW=HttpQueryInfoW_Stub
+HttpSendRequestA=HttpSendRequestA_Stub
+InternetCloseHandle=InternetCloseHandle_Stub
+InternetConnectW=InternetConnectW_Stub
+InternetOpenUrlW=InternetOpenUrlW_Stub
+InternetOpenW=InternetOpenW_Stub
+InternetReadFile=InternetReadFile_Stub
+InternetSetOptionW=InternetSetOptionW_Stub

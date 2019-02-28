@@ -1,0 +1,5 @@
+LIBRARY lib
+EXPORTS
+
+;mpr.dll
+WNetGetUniversalNameW=WNetGetUniversalNameW_Stub
